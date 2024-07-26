@@ -1,0 +1,99 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:olivedrab;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    background:transparent ; /* Slightly transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Set a fixed width for better alignment */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the board */
+    border:transparent;
+    border-radius: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for cells */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: transparent;
+    color: #fff; /* White text for better visibility */
+}
+
+.cell.x {
+    color: rgb(245, 8, 47); /* Color for 'X' */
+}
+
+.cell.circle {
+    color: blue; /* Color for 'O' */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff; /* Blue background for buttons */
+    color: #fff; /* White text for buttons */
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.mode-selection {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.mode-selection label {
+    display: block;
+    margin: 10px 0;
+}
+
+.player-selection {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.player-selection label {
+    display: block;
+    margin: 10px 0;
+}
+
+.player-selection select {
+    padding: 5px;
+    font-size: 16px;
+}
